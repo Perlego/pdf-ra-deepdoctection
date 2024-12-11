@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from IPython.core.display import HTML
 
 import deepdoctection as dd
-#  data from here https://github.com/deepdoctection/notebooks/blob/main/Get_Started.ipynb
+# process outline from here https://github.com/deepdoctection/notebooks/blob/main/Get_Started.ipynb
 
 doc_path = Path.cwd() / "data/pdf/9780357517239.pdf"
 
@@ -24,7 +24,6 @@ for page in doc:
     )
 
     pg_attributes = page.get_attribute_names()
-
 
     print(f"Attributes: {pg_attributes} \n")
 
